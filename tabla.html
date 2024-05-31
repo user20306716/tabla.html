@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Periódica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .periodic-table {
+            display: grid;
+            grid-template-columns: repeat(18, 80px);
+            grid-template-rows: repeat(10, 80px);
+            gap: 5px;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 1100px;
+        }
+        .periodic-table div {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+            font-size: 10px;
+            border-radius: 5px;
+        }
+        .header {
+            grid-column: span 18;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .legend div {
+            margin: 0 10px;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        .alkali-metal { background-color: #038646; }
+        .alkaline-earth-metal { background-color: #e83131; }
+        .transition-metal { background-color: #6d4cc5; }
+        .post-transition-metal { background-color: #00822d; }
+        .metalloid { background-color: #8d5707; }
+        .nonmetal { background-color: #4040d8; }
+        .halogen { background-color: #7c7c7c; }
+        .noble-gas { background-color: #c44b4b; }
+        .lanthanide { background-color: #0000ff; }
+        .actinide { background-color: #75441c; }
+    </style>
+</head>
+<body>
+
+<h1 class="header">Tabla Periódica de los Elementos</h1>
+
+<div class="periodic-table">
+        <!-- Primera Fila -->
+        <div class="nonmetal" style="grid-column: 1 / span 1; grid-row: 1;">1<br>H<br>Hidrógeno<br>1.008</div>
+        <div class="noble-gas" style="grid-column: 18 / span 1; grid-row: 1;">2<br>He<br>Helio<br>4.0026</div>
+        <!-- Segunda Fila -->
+        <div class="alkali-metal" style="grid-column: 1 / span 1; grid-row: 2;">3<br>Li<br>Litio<br>6.94</div>
+        <div class="alkaline-earth-metal" style="grid-column: 2 / span 1; grid-row: 2;">4<br>Be<br>Berilio<br>9.0122</div>
+        <div class="metalloid" style="grid-column: 13 / span 1; grid-row: 2;">5<br>B<br>Boro<br>10.81</div>
+        <div class="nonmetal" style="grid-column: 14 / span 1; grid-row: 2;">6<br>C<br>Carbono<br>12.011</div>
+        <div class="nonmetal" style="grid-column: 15 / span 1; grid-row: 2;">7<br>N<br>Nitrógeno<br>14.007</div>
+        <div class="nonmetal" style="grid-column: 16 / span 1; grid-row: 2;">8<br>O<br>Oxígeno<br>15.999</div>
+        <div class="nonmetal" style="grid-column: 17 / span 1; grid-row: 2;">9<br>F<br>Flúor<br>18.998</div>
+        <div class="noble-gas" style="grid-column: 18 / span 1; grid-row: 2;">10<br>Ne<br>Neón<br>20.180</div>
+        <!-- Tercera Fila -->
+        <div class="alkali-metal" style="grid-column: 1 / span 1; grid-row: 3;">11<br>Na<br>Sodio<br>22.990</div>
+        <div class="alkaline-earth-metal" style="grid-column: 2 / span 1; grid-row: 3;">12<br>Mg<br>Magnesio<br>24.305</div>
+        <div class="post-transition-metal" style="grid-column: 13 / span 1; grid-row: 3;">13<br>Al<br>Aluminio<br>26.982</div>
+        <div class="metalloid" style="grid-column: 14 / span 1; grid-row: 3;">14<br>Si<br>Silicio<br>28.085</div>
+        <div class="nonmetal" style="grid-column: 15 / span 1; grid-row: 3;">15<br>P<br>Fósforo<br>30.974</div>
+        <div class="nonmetal" style="grid-column: 16 / span 1; grid-row: 3;">16<br>S<br>Azufre<br>32.06</div>
+        <div class="nonmetal" style="grid-column: 17 / span 1; grid-row: 3;">17<br>Cl<br>Cloro<br>35.45</div>
+        <div class="noble-gas" style="grid-column: 18 / span 1; grid-row: 3;">18<br>Ar<br>Argón<br>39.948</div>
+        <!-- Cuarta Fila -->
+        <div class="alkali-metal" style="grid-column: 1 / span 1; grid-row: 4;">19<br>K<br>Potasio<br>39.098</div>
+        <div class="alkaline-earth-metal" style="grid-column: 2 / span 1; grid-row: 4;">20<br>Ca<br>Calcio<br>40.078</div>
+        <div class="transition-metal" style="grid-column: 3 / span 1; grid-row: 4;">21<br>Sc<br>Escandio<br>44.956</div>
+        <div class="transition-metal" style="grid-column: 4 / span 1; grid-row: 4;">22<br>Ti<br>Titanio<br>47.867</div>
+        <div class="transition-metal" style="grid-column: 5 / span 1; grid-row: 4;">23<br>V<br>Vanadio<br>50.942</div>
+        <div class="transition-metal" style="grid-column: 6 / span 1; grid-row: 4;">24<br>Cr<br>Cromo<br>51.996</div>
+        <div class="transition-metal" style="grid-column: 7 / span 1; grid-row: 4;">25<br>Mn<br>Manganeso<br>54.938</div>
+        <div class="transition-metal" style="grid-column: 8 / span 1; grid-row: 4;">26<br>Fe<br>Hierro<br>55.845</div>
+        <div class="transition-metal" style="grid-column: 9 / span 1; grid-row: 4;">27<br>Co<br>Cobalto<br>58.933</div>
+        <div class="transition-metal" style="grid-column: 10 / span 1; grid-row: 4;">28<br>Ni<br>Níquel<br>58.693</div>
+        <div class="transition-metal" style="grid-column: 11 / span 1; grid-row: 4;">29<br>Cu<br>Cobre<br>63.546</div>
+        <div class="transition-metal" style="grid-column: 12 / span 1; grid-row: 4;">30<br>Zn<br>Cinc<br>65.38</div>
+        <div class="post-transition-metal" style="grid-column: 13 / span 1; grid-row: 4;">31<br>Ga<br>Galio<br>69.723</div>
+        <div class="metalloid" style="grid-column: 14 / span 1; grid-row: 4;">32<br>Ge<br>Germanio<br>72.63</div>
+        <div class="metalloid" style="grid-column: 15 / span 1; grid-row: 4;">33<br>As<br>Arsénico<br>74.922</div>
+        <div class="nonmetal" style="grid-column: 16 / span 1; grid-row: 4;">34<br>Se<br>Selenio<br>78.971</div>
+        <div class="nonmetal" style="grid-column: 17 / span 1; grid-row: 4;">35<br>Br<br>Bromo<br>79.904</div>
+        <div class="noble-gas" style="grid-column: 18 / span 1; grid-row: 4;">36<br>Kr<br>Kriptón<br>83.798</div>
+        <!-- Quinta Fila -->
+        <div class="alkali-metal" style="grid-column: 1 / span 1; grid-row: 5;">37<br>Rb<br>Rubidio<br>85.468</div>
+        <div class="alkaline-earth-metal" style="grid-column: 2 / span 1; grid-row: 5;">38<br>Sr<br>Estroncio<br>87.62</div>
+        <div class="transition-metal" style="grid-column: 3 / span 1; grid-row: 5;">39<br>Y<br>Itrio<br>88.906</div>
+        <div class="transition-metal" style="grid-column: 4 / span 1; grid-row: 5;">40<br>Zr<br>Zirconio<br>91.224</div>
+        <div class="transition-metal" style="grid-column: 5 / span 1; grid-row: 5;">41<br>Nb<br>Niobio<br>92.906</div>
+        <div class="transition-metal" style="grid-column: 6 / span 1; grid-row: 5;">42<br>Mo<br>Molibdeno<br>95.95</div>
+        <div class="transition-metal" style="grid-column: 7 / span 1; grid-row: 5;">43<br>Tc<br>Tecnecio<br>(98)</div>
+        <div class="transition-metal" style="grid-column: 8 / span 1; grid-row: 5;">44<br>Ru<br>Rutenio<br>101.07</div>
+        <div class="transition-metal" style="grid-column: 9 / span 1; grid-row: 5;">45<br>Rh<br>Rodio<br>102.91</div>
+        <div class="transition-metal" style="grid-column: 10 / span 1; grid-row: 5;">46<br>Pd<br>Paladio<br>106.42</div>
+        <div class="transition-metal" style="grid-column: 11 / span 1; grid-row: 5;">47<br>Ag<br>Plata<br>107.87</div>
+        <div class="transition-metal" style="grid-column: 12 / span 1; grid-row: 5;">48<br>Cd<br>Cadmio<br>112.41</div>
+        <div class="post-transition-metal" style="grid-column: 13 / span 1; grid-row: 5;">49<br>In<br>Indio<br>114.82</div>
+        <div class="post-transition-metal" style="grid-column: 14 / span 1; grid-row: 5;">50<br>Sn<br>Estaño<br>118.71</div>
+        <div class="metalloid" style="grid-column: 15 / span 1; grid-row: 5;">51<br>Sb<br>Antimonio<br>121.76</div>
+        <div class="metalloid" style="grid-column: 16 / span 1; grid-row: 5;">52<br>Te<br>Telurio<br>127.60</div>
+        <div class="nonmetal" style="grid-column: 17 / span 1; grid-row: 5;">53<br>I<br>Yodo<br>126.90</div>
+        <div class="noble-gas" style="grid-column: 18 / span 1; grid-row: 5;">54<br>Xe<br>Xenón<br>131.29</div>
+        <!-- Sexta Fila -->
+        <div class="alkali-metal" style="grid-column: 1 / span 1; grid-row: 6;">55<br>Cs<br>Cesio<br>132.91</div>
+        <div class="alkaline-earth-metal" style="grid-column: 2 / span 1; grid-row: 6;">56<br>Ba<br>Bario<br>137.33</div>
+        <div class="lanthanide" style="grid-column: 3 / span 1; grid-row: 8;">57<br>La<br>Lantano<br>138.91</div>
+        <div class="transition-metal" style="grid-column: 4 / span 1; grid-row: 6;">72<br>Hf<br>Hafnio<br>178.49</div>
+        <div class="transition-metal" style="grid-column: 5 / span 1; grid-row: 6;">73<br>Ta<br>Tántalo<br>180.95</div>
+        <div class="transition-metal" style="grid-column: 6 / span 1; grid-row: 6;">74<br>W<br>Wolframio<br>183.84</div>
+        <div class="transition-metal" style="grid-column: 7 / span 1; grid-row: 6;">75<br>Re<br>Renio<br>186.21</div>
+        <div class="transition-metal" style="grid-column: 8 / span 1; grid-row: 6;">76<br>Os<br>Osmio<br>190.23</div>
+        <div class="transition-metal" style="grid-column: 9 / span 1; grid-row: 6;">77<br>Ir<br>Iridio<br>192.22</div>
+        <div class="transition-metal" style="grid-column: 10 / span 1; grid-row: 6;">78<br>Pt<br>Platino<br>195.08</div>
+        <div class="transition-metal" style="grid-column: 11 / span 1; grid-row: 6;">79<br>Au<br>Oro<br>196.97</div>
+        <div class="transition-metal" style="grid-column: 12 / span 1; grid-row: 6;">80<br>Hg<br>Mercurio<br>200.59</div>
+        <div class="post-transition-metal" style="grid-column: 13 / span 1; grid-row: 6;">81<br>Tl<br>Talio<br>204.38</div>
+        <div class="post-transition-metal" style="grid-column: 14 / span 1; grid-row: 6;">82<br>Pb<br>Plomo<br>207.2</div>
+        <div class="post-transition-metal" style="grid-column: 15 / span 1; grid-row: 6;">83<br>Bi<br>Bismuto<br>208.98</div>
+        <div class="post-transition-metal" style="grid-column: 16 / span 1; grid-row: 6;">84<br>Po<br>Polonio<br>(209)</div>
+        <div class="post-transition-metal" style="grid-column: 17 / span 1; grid-row: 6;">85<br>At<br>Astato<br>(210)</div>
+        <div class="noble-gas" style="grid-column: 18 / span 1; grid-row: 6;">86<br>Rn<br>Radón<br>(222)</div>
+        <!-- Séptima Fila -->
+        <div class="alkali-metal" style="grid-column: 1 / span 1; grid-row: 7;">87<br>Fr<br>Francio<br>(223)</div>
+        <div class="alkaline-earth-metal" style="grid-column: 2 / span 1; grid-row: 7;">88<br>Ra<br>Radio<br>(226)</div>
+        <div class="actinide" style="grid-column: 3 / span 1; grid-row: 9;">89<br>Ac<br>Actinio<br>(227)</div>
+        <div class="transition-metal" style="grid-column: 4 / span 1; grid-row: 7;">104<br>Rf<br>Rutherfordio<br>(267)</div>
+        <div class="transition-metal" style="grid-column: 5 / span 1; grid-row: 7;">105<br>Db<br>Dubnio<br>(270)</div>
+        <div class="transition-metal" style="grid-column: 6 / span 1; grid-row: 7;">106<br>Sg<br>Seaborgio<br>(271)</div>
+        <div class="transition-metal" style="grid-column: 7 / span 1; grid-row: 7;">107<br>Bh<br>Bohrio<br>(270)</div>
+        <div class="transition-metal" style="grid-column: 8 / span 1; grid-row: 7;">108<br>Hs<br>Hassio<br>(277)</div>
+        <div class="halogen" style="grid-column: 9 / span 1; grid-row: 7;">109<br>Mt<br>Meitnerio<br>(278)</div>
+        <div class="halogen" style="grid-column: 10 / span 1; grid-row: 7;">110<br>Ds<br>Darmstadtio<br>(281)</div>
+        <div class="halogen" style="grid-column: 11 / span 1; grid-row: 7;">111<br>Rg<br>Roentgenio<br>(282)</div>
+        <div class="halogen" style="grid-column: 12 / span 1; grid-row: 7;">112<br>Cn<br>Copernicio<br>(285)</div>
+        <div class="halogen" style="grid-column: 13 / span 1; grid-row: 7;">113<br>Nh<br>Nihonio<br>(286)</div>
+        <div class="halogen" style="grid-column: 14 / span 1; grid-row: 7;">114<br>Fl<br>Flerovio<br>(289)</div>
+        <div class="halogen" style="grid-column: 15 / span 1; grid-row: 7;">115<br>Mc<br>Moscovio<br>(290)</div>
+        <div class="halogen" style="grid-column: 16 / span 1; grid-row: 7;">116<br>Lv<br>Livermorio<br>(293)</div>
+        <div class="halogen" style="grid-column: 17 / span 1; grid-row: 7;">117<br>Ts<br>Tenesino<br>(294)</div>
+        <div class="halogen" style="grid-column: 18 / span 1; grid-row: 7;">118<br>Og<br>Oganesón<br>(294)</div>
+        <!-- Lantánidos -->
+        <div class="lanthanide" style="grid-column: 3 / span 1; grid-row: 8;">58<br>Ce<br>Cerio<br>140.12</div>
+        <div class="lanthanide" style="grid-column: 4 / span 1; grid-row: 8;">59<br>Pr<br>Praseodimio<br>140.91</div>
+        <div class="lanthanide" style="grid-column: 5 / span 1; grid-row: 8;">60<br>Nd<br>Neodimio<br>144.24</div>
+        <div class="lanthanide" style="grid-column: 6 / span 1; grid-row: 8;">61<br>Pm<br>Prometio<br>(145)</div>
+        <div class="lanthanide" style="grid-column: 7 / span 1; grid-row: 8;">62<br>Sm<br>Samario<br>150.36</div>
+        <div class="lanthanide" style="grid-column: 8 / span 1; grid-row: 8;">63<br>Eu<br>Europio<br>151.96</div>
+        <div class="lanthanide" style="grid-column: 9 / span 1; grid-row: 8;">64<br>Gd<br>Gadolinio<br>157.25</div>
+        <div class="lanthanide" style="grid-column: 10 / span 1; grid-row: 8;">65<br>Tb<br>Terbio<br>158.93</div>
+        <div class="lanthanide" style="grid-column: 11 / span 1; grid-row: 8;">66<br>Dy<br>Disprosio<br>162.50</div>
+        <div class="lanthanide" style="grid-column: 12 / span 1; grid-row: 8;">67<br>Ho<br>Holmio<br>164.93</div>
+        <div class="lanthanide" style="grid-column: 13 / span 1; grid-row: 8;">68<br>Er<br>Erbio<br>167.26</div>
+        <div class="lanthanide" style="grid-column: 14 / span 1; grid-row: 8;">69<br>Tm<br>Tulio<br>168.93</div>
+        <div class="lanthanide" style="grid-column: 15 / span 1; grid-row: 8;">70<br>Yb<br>Iterbio<br>173.05</div>
+        <div class="lanthanide" style="grid-column: 16 / span 1; grid-row: 8;">71<br>Lu<br>Lutecio<br>174.97</div>
+        <!-- Actínidos -->
+        <div class="actinide" style="grid-column: 3 / span 1; grid-row: 9;">90<br>Th<br>Torio<br>232.04</div>
+        <div class="actinide" style="grid-column: 4 / span 1; grid-row: 9;">91<br>Pa<br>Protactinio<br>231.04</div>
+        <div class="actinide" style="grid-column: 5 / span 1; grid-row: 9;">92<br>U<br>Uranio<br>238.03</div>
+        <div class="actinide" style="grid-column: 6 / span 1; grid-row: 9;">93<br>Np<br>Neptunio<br>(237)</div>
+        <div class="actinide" style="grid-column: 7 / span 1; grid-row: 9;">94<br>Pu<br>Plutonio<br>(244)</div>
+        <div class="actinide" style="grid-column: 8 / span 1; grid-row: 9;">95<br>Am<br>Americio<br>(243)</div>
+        <div class="actinide" style="grid-column: 9 / span 1; grid-row: 9;">96<br>Cm<br>Curio<br>(247)</div>
+        <div class="actinide" style="grid-column: 10 / span 1; grid-row: 9;">97<br>Bk<br>Berkelio<br>(247)</div>
+        <div class="actinide" style="grid-column: 11 / span 1; grid-row: 9;">98<br>Cf<br>Californio<br>(251)</div>
+        <div class="actinide" style="grid-column: 12 / span 1; grid-row: 9;">99<br>Es<br>Einstenio<br>(252)</div>
+        <div class="actinide" style="grid-column: 13 / span 1; grid-row: 9;">100<br>Fm<br>Fermio<br>(257)</div>
+        <div class="actinide" style="grid-column: 14 / span 1; grid-row: 9;">101<br>Md<br>Mendelevio<br>(258)</div>
+        <div class="actinide" style="grid-column: 15 / span 1; grid-row: 9;">102<br>No<br>Nobelio<br>(259)</div>
+        <div class="actinide" style="grid-column: 16 / span 1; grid-row: 9;">103<br>Lr<br>Lawrencio<br>(262)</div>
+    </div>
+    <p>
+        Trabajo original por: <br>
+        - Jonathan Aaron Quijada Hernándaz <br>
+        - Ivania Esmeralda Hernándaz Garcia <br>
+
+        Nombre: <br>
+        - Fernando Gabriel Pinto Castro <br>
+        - Karla Beatriz Morales Hernándaz
+
+    </p>
+</body>
+</html>
